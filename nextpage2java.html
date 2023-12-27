@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nextpage2java-styles.css">
+    <title>Next Page 2 (Java)</title>
+</head>
+<body>
+    <div class="code-container">
+        <div class="copy-code-container">
+            <button class="copy-code-button" onclick="copyCode()">Copy Code</button>
+        </div>
+        <pre class="code-box">
+            <code>
+'''
+👋 Hola Nerd! 🌐 I'm a sneaky piece of code with a twist – I've got a bunch of bugs buzzing around me! 🐞✨ 
+Your quest, should you choose to accept, is to squash these bugs and set me free.
+Think of it as a coding rescue mission!🚀Correct my syntax errors, and I'll open the door to the next level of your web adventure. 
+But beware, wander NOT into the tricky realms of logic errors, for they might lead you astray! 🚧🧐
+Good luck, Coding Maverick! 🚀 May your debugging skills shine bright and lead you to victory! 💻🔍
+'''
+
+
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String args[]) {
+        int[] clueNo1 = {74, 97, 114, 118, 105, 115};
+
+        String originalWord = decodeWord(clueNo1);
+        System.out.println(originalWord);
+
+        String reversedWord = reverseWord(originalWord);
+        System.out.print(reversedWord);
+
+    }
+
+    private static String decodeWord(int[] clueNo1) {
+        char[] charArray = new char[clueNo1.length];
+        for (int i = 0; i < clueNo1.length; i++) {
+            charArray[i] = (char) clueNo1[i];
+        }
+
+        return new String(charArray);
+    }
+
+    private static String reverseWord(String word) {
+        word = "";
+        String words = word;
+        char[] charArray = word.toCharArray();
+
+        for (int i = 0, j = charArray.length - 1; i < j; i++, j--) {
+            char temp = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = temp;
+        }
+
+        return new String(charArray);
+    }
+}
+            </code>
+        </pre>
+    </div>
+    
+    <button class="next-button" onclick="navigateToNextPage()">Next &#8594;</button>
+
+    <script src="nextpage2java-script.js"></script>
+</body>
+</html>

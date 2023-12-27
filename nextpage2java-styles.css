@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Set background color as needed */
+}
+
+.code-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.copy-code-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.copy-code-button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    background: #777; /* Grey color */
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+
+.copy-code-button:hover {
+    background: #555; /* Darker grey on hover */
+    opacity: 0.8;
+}
+
+.code-box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.code-box code {
+    text-align: left; /* Left-align the code within the box */
+    color: #ffffff; /* Set text color as needed */
+    font-family: monospace; /* Use a monospace font for code readability */
+}
+
+.next-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: #3498db;
+    color: white;
+}
+
+.next-button:hover {
+    opacity: 0.8;
+}

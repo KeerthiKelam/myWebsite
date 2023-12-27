@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.club-info {
+    margin-top: 20px;
+}
+
+.event-info {
+    margin-top: 40px;
+}
+
+/* Add more styles as needed for your layout and design */
+body {
+    position: relative;
+}
+
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none; /* Remove default button outline */
+}
+
+.next-button:hover {
+    background-color: #2980b9;
+}

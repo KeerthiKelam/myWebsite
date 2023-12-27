@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Set background color as needed */
+}
+
+.event-name-container {
+    text-align: center;
+}
+
+.event-name {
+    font-size: 5em; /* Adjust the font size as needed */
+    color: #3498db; /* Set the text color as needed */
+    animation: fadeInUp 2s ease-in-out; /* Example animation, adjust as needed */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Set background color as needed */
+}
+
+.event-name-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event-name {
+    font-size: 3em; /* Adjust the font size as needed */
+    color: #3498db; /* Set the text color as needed */
+    animation: fadeInUp 2s ease-in-out; /* Example animation, adjust as needed */
+}
+
+.navigation-buttons {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prev-button,
+.next-button {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #3498db;
+    cursor: pointer;
+    outline: none; /* Remove default button outline */
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}

@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(nexpgage2image2.png);
+    background-repeat: round;   
+}
+
+
+
+.button-container {
+    text-align: center;
+}
+
+.python-button,
+.java-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.python-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.java-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.python-button:hover,
+.java-button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
